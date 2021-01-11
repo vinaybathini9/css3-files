@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html
+<head>
+<style>
+div{
+  width:200px;
+height:100px;
+background-color:pink;
+font-weight:italic;
+position:relative;
+animation-name:example;
+animation-fill-mode:forwards;
+animation: mymove 5s infinite;
+}
+#div1 { animation-timing-function: linear;}
+#div2 { animation-timing-function: ease;}
+#div3 { animation-timimg-function: ease-in;}
+#div4 { animation-timing-function: ease-out;}
+#div5 { animation-timing-function: ease-in-out;}
+@keyframes mymove{
+from{left:0px;}
+to {left:300px;}
+}
+</style>
+</head>
+<body>
+<p><strong>Note: animation-timing-function property does not support internet 9 and earlier 
+version </p>
+<div id="div1"> Core java </div>
+<div id="div2"> Advance java </div>
+<div id="div3"> HTML </div>
+<div id="div4"> CSS </div>
+<div id="div5"> Mongodb</div>
+</body>
+</html>
